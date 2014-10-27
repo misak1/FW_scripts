@@ -1,0 +1,18 @@
+var h = fw.getDocumentDOM().height;
+var w = fw.getDocumentDOM().width;
+fw.getDocumentDOM().setDocumentCanvasSize({left:-1, top:-1, right:w + 1, bottom:h + 1}, true);
+fw.getDocumentDOM().pathAttributes.brushColor = "#ffffff00";
+fw.getDocumentDOM().pathAttributes.fillColor = "#000000";
+
+fw.getDocumentDOM().addNewRectanglePrimitive({ left:w + 1, right:w + 2, top:280+1, bottom:1400+1}, 0);
+fw.getDocumentDOM().addNewRectanglePrimitive({ top:h + 1, bottom:h + 2, left:100+1, right:980+1}, 0);
+
+fw.getDocumentDOM().addNewRectanglePrimitive({ left:0, right:1, top:1, bottom:2}, 0);
+fw.getDocumentDOM().addNewRectanglePrimitive({ left:0, right:1, top:h, bottom:h + 1}, 0);
+
+fw.getDocumentDOM().addNewRectanglePrimitive({ top:0, bottom:1, left:1, right:2}, 0);
+fw.getDocumentDOM().addNewRectanglePrimitive({ top:0, bottom:1, left:w, right:w + 1}, 0);
+
+// ストローク無色
+// 塗り#000000
+
